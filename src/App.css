@@ -1,7 +1,6 @@
 .App {
   text-align: center;
-  font-size: xx-large;
-  color: yellow;
+  
 }
 
 /*.App-logo {
@@ -46,11 +45,4 @@
 .secondrow{
   display: flex;
   justify-content: space-around;
-}
-.App{
-  margin: 30px;
-}
-em{
-  font-size: smaller;
-  color: red;
 }

@@ -1,6 +1,6 @@
 //import logo from './logo.svg';
 import './App.css';
-//import { Card } from './Card/card';
+import { Card } from './Card/card';
 
 function App() {
   let cardArrayRow1 = [
@@ -55,65 +55,49 @@ function App() {
   ];
 
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <div className="firstrow">
-    //       {
-    //         cardArrayRow1.map((item, index) => {
-    //           return(
-    //             <Card
-    //               id = {item.id}
-    //               img = {item.img}
-    //               imgalt = {item.imgalt} 
-    //               name = {item.name}
-    //               brand = {item.brand}
-    //               description = {item.description}
-    //               price = {item.price}
-    //             />
-    //           )
-    //         })
-    //       }
-    //     </div>
-    //     <br/>
-    //     <br/>
-    //     <div className="secondrow">
-    //       {
-    //         cardArrayRow2.map((item, index) => {
-    //           return(
-    //             <Card
-    //               id = {item.id}
-    //               img = {item.img}
-    //               imgalt = {item.imgalt} 
-    //               name = {item.name}
-    //               brand = {item.brand}
-    //               description = {item.description}
-    //               price = {item.price}
-    //             />
-    //           )
-    //         })
-    //       }
-    //     </div>
-    //   </header>
-    // </div>
-    <div className='App'>
-      <div>
-      {
-        cardArrayRow1.map((ele)=>(
-          <li key={ele.id}>{ele.id} is the {ele.brand} brand laptop, and the price of this laptop is about {ele.price} <br/>
-          <em>{ele.description}</em></li>
-        ))
-      }
-      </div>
-      <div>
-      {
-        cardArrayRow2.map((ele)=>(
-          <li key={ele.id}>{ele.id} is the {ele.brand} brand laptop, and the price of this laptop is about {ele.price} <br/>
-          <em>{ele.description}</em></li>
-        ))
-      }
-    </div>
-    </div>
+     <div className="App">
+       <header className="App-header">
+         <div className="firstrow">
+           {
+             cardArrayRow1.map((item, index) => {
+               return(
+                <Card
+                   id = {item.id}
+                   img = {item.img}
+                   imgalt = {item.imgalt} 
+                   name = {item.name}
+                   brand = {item.brand}
+                   description = {item.description}
+                 price = {item.price}
+                 />
+               )
+            })
+         }
+         </div>
+         <br/>
+         <br/>
+         <div className="secondrow">
+           {
+             cardArrayRow2.map((item, index) => {
+               return(
+                 <Card
+                   id = {item.id}
+                   img = {item.img}
+                   imgalt = {item.imgalt} 
+                   name = {item.name}
+                   brand = {item.brand}
+                 description = {item.description}
+                   price = {item.price}
+                 />
+               )
+             })
+         }
+         </div>
+       </header>
+     </div>
   );
-}
+        }
+      
+
 
 export default App;
