@@ -1,8 +1,17 @@
 //import logo from './logo.svg';
 import './App.css';
 import { Card } from './Card/card';
+import { useState } from 'react';
 
 function App() {
+  const[data,datachange]=useState([])
+  function handleClick1(){
+    datachange(cardArrayRow1);
+  }
+  function handleClick2(){
+    datachange(cardArrayRow2);
+  }
+
   let cardArrayRow1 = [
     {
       id: "1",
@@ -58,40 +67,27 @@ function App() {
      <div className="App">
        <header className="App-header">
          <div className="firstrow">
+          <button onClick={handleClick1}>Do you Want to buy Laptop??????</button> ?
+          :
+
+          
            {
-             cardArrayRow1.map((item, index) => {
+             data.map((item, index) => {
                return(
                 <Card
+                key={index}
                    id = {item.id}
                    img = {item.img}
                    imgalt = {item.imgalt} 
                    name = {item.name}
                    brand = {item.brand}
                    description = {item.description}
-                 price = {item.price}
+                   price = {item.price}
                  />
                )
             })
          }
-         </div>
-         <br/>
-         <br/>
-         <div className="secondrow">
-           {
-             cardArrayRow2.map((item, index) => {
-               return(
-                 <Card
-                   id = {item.id}
-                   img = {item.img}
-                   imgalt = {item.imgalt} 
-                   name = {item.name}
-                   brand = {item.brand}
-                 description = {item.description}
-                   price = {item.price}
-                 />
-               )
-             })
-         }
+  
          </div>
        </header>
      </div>
