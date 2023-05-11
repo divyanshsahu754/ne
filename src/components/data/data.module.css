@@ -1,0 +1,17 @@
+.card_container{
+    border: 1px solid red;
+    width: 70% ;
+    display: flex;
+    margin: auto;
+    padding: 2rem ;
+    max-width: 70%;
+    /* gap: 2rem; */
+    /* overflow: hidden; */
+    overflow: scroll;
+    
+    
+
+}
+.card_container::-webkit-scrollbar {
+    display: none;
+}
