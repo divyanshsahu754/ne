@@ -1,0 +1,35 @@
+.box{
+    width: 20rem;
+    height: 500px;
+    
+    
+    border: .5rem solid ;
+    background-image: linear-gradient(pink,blue);
+    margin: auto;
+    margin-top:5rem ;
+}
+
+.Addbtn{
+    background-image: linear-gradient(yellow,brown);
+    margin-left: 1rem;
+
+}
+
+
+li{
+    justify-content: start;
+    color: yellow;
+}
+.delete{
+    margin-left: 4rem;
+    
+    border-radius: .2rem;
+    background-color:orange;
+}
+p{
+    font-size: x-large;
+    color:  darkolivegreen;
+}
+.logo{
+    height: 3rem;
+}
